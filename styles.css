@@ -42,7 +42,7 @@ body, html {
 }
 
 #invite-message {
-    background: url("pink-marble.jpg") no-repeat;
+    background: url("pink-marble.jpg") no-repeat center center fixed;
     background-size: cover;
     color: black;
 }
@@ -50,7 +50,7 @@ body, html {
 #main-content {
     display: none;
     text-align: center;
-    transition: opacity 1ms ease-in-out;
+    transition: opacity 3s ease-in-out;
     width: 100%;
     height: 100%;
     color: black;
