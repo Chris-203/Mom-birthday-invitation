@@ -1,0 +1,68 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: url("pink-marble.jpg") no-repeat;
+    background-size: cover;
+    font-family: cursive;
+}
+
+#welcome-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.message {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    font-size: 2em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-family: 'cursive'; */
+    /* font-style: cursive; */
+}
+
+#welcome-message {
+    /* background-color: blue; */
+    color: black;
+}
+
+#invite-message {
+    background: url("pink-marble.jpg") no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+#main-content {
+    display: none;
+    text-align: center;
+    transition: opacity 1ms ease-in-out;
+    width: 100%;
+    height: 100%;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
