@@ -10,6 +10,9 @@ body, html {
     background: url("pink-marble.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: cursive;
+    overflow-y: auto;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5); /* For Firefox */
 }
 
 #welcome-container {
