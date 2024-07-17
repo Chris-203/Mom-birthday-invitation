@@ -56,11 +56,23 @@ body, html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow-y: auto;
+    overflow-y: auto; /* Enable vertical scrolling */
     scrollbar-width: thin; /* For Firefox */
     scrollbar-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5); /* For Firefox */
 }
+/* Customize scrollbar for WebKit browsers */
+#main-content::-webkit-scrollbar {
+    width: 8px;
+}
 
+#main-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2); /* Track color */
+}
+
+#main-content::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5); /* Scrollbar color */
+    border-radius: 10px;
+}
 .visible {
     opacity: 1;
 }
