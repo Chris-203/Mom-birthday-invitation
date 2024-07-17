@@ -1,16 +1,16 @@
 body, html {
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     width: 100%;
-    height: 100%;
-    display: flex;
+    height: fit-content;
+    display: auto;
     align-items: center;
     justify-content: center;
     font-family: Arial, sans-serif;
-    background: url("pink-marble.jpg") no-repeat;
-    background-size: cover;
+    background: url("pink-marble.jpg") no-repeat center center fixed;
+    background-size:cover;
     font-family: cursive;
-    overflow: hidden;
+    /* overflow: auto; */
 }
 
 #welcome-container {
@@ -22,6 +22,7 @@ body, html {
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .message {
@@ -33,7 +34,6 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 #welcome-message {
@@ -44,6 +44,7 @@ body, html {
 #invite-message {
     /* background: url("pink-marble.jpg") no-repeat; */
     /* background-size: cover; */
+    /* background-color: blue; */
     color: black;
 }
 
@@ -57,7 +58,8 @@ body, html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow: visible; /* Enable vertical scrolling */
+    /* overflow: visible; */
+    /* overflow-y: auto; Enable vertical scrolling */
     scrollbar-width: thin; /* For Firefox */
     scrollbar-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5); /* For Firefox */
 }
@@ -67,11 +69,11 @@ body, html {
 }
 
 #main-content::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.2); /* Track color */
+    background: rgba(255, 255, 255, 0.2); /*// Track color */
 }
 
 #main-content::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.5); /* Scrollbar color */
+    background: rgba(0, 0, 0, 0.5); /*Scrollbar color */
     border-radius: 10px;
 }
 .visible {
