@@ -7,7 +7,7 @@ body, html {
     align-items: center;
     justify-content: center;
     font-family: Arial, sans-serif;
-    background: url("pink-marble.jpg") no-repeat;
+    background: url("pink-marble.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: cursive;
 }
