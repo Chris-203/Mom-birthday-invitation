@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 mainContent.style.display = "auto"; // Ensure it's visible
                 mainContent.classList.add("visible");
                 document.body.style.overflow = "scroll"; // Allow scrolling only on the main content
-                document.body.style.height = "fit_content"
+                document.body.style.height = "100%"
                 mainContent.style.opacity = "1";
                 setTimeout(() => {
                     inviteMessage.style.display = "none"; // Hide invite message completely

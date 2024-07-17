@@ -2,7 +2,7 @@ body, html {
     /* margin: 0; */
     /* padding: 0; */
     width: 100%;
-    height: fit-content;
+    height: 100%;
     display: auto;
     align-items: center;
     justify-content: center;
@@ -10,7 +10,7 @@ body, html {
     background: url("pink-marble.jpg") no-repeat center center fixed;
     background-size:cover;
     font-family: cursive;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 #welcome-container {
