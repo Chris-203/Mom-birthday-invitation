@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => {
                 inviteMessage.classList.remove("visible");
                 mainContent.classList.add("visible");
-                mainContent.style.transition = "opacity 1s ease-in-out"
+                mainContent.style.opacity = "1";
                 mainContent.style.display = "flex";
                 setTimeout(() => {
                     inviteMessage.classList.add("none");

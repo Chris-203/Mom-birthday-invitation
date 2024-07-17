@@ -7,7 +7,7 @@ body, html {
     align-items: center;
     justify-content: center;
     font-family: Arial, sans-serif;
-    background: url("pink-marble.jpg") no-repeat center center fixed;
+    background: url("pink-marble.jpg") no-repeat;
     background-size: cover;
     font-family: cursive;
     overflow-y: auto;
@@ -35,8 +35,6 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* font-family: 'cursive'; */
-    /* font-style: cursive; */
 }
 
 #welcome-message {
@@ -45,15 +43,15 @@ body, html {
 }
 
 #invite-message {
-    background: url("pink-marble.jpg") no-repeat center center fixed;
-    background-size: cover;
+    /* background: url("pink-marble.jpg") no-repeat; */
+    /* background-size: cover; */
     color: black;
 }
 
 #main-content {
-    display: none;
     text-align: center;
-    transition: opacity 3s ease-in-out;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-in-out; /* Added transition */
     width: 100%;
     height: 100%;
     color: black;
@@ -68,4 +66,15 @@ body, html {
 
 .hidden {
     display: none;
+}
+@media (max-width: 768px) {
+    .message {
+        font-size: 1.5em; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .message {
+        font-size: 1em; /* Even smaller font size for very small screens */
+    }
 }
