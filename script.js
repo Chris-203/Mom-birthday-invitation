@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Show the main content with the fade-in effect
                 mainContent.style.display = "flex"; // Ensure it's visible
                 mainContent.classList.add("visible");
-                document.body.style.overflow = "auto"; // Allow scrolling only on the main content
+                document.body.style.overflow = "visible"; // Allow scrolling only on the main content
                 mainContent.style.opacity = "1";
                 setTimeout(() => {
                     inviteMessage.style.display = "none"; // Hide invite message completely

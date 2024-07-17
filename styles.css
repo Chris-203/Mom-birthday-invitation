@@ -57,7 +57,7 @@ body, html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow: auto; /* Enable vertical scrolling */
+    overflow: visible; /* Enable vertical scrolling */
     scrollbar-width: thin; /* For Firefox */
     scrollbar-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5); /* For Firefox */
 }
