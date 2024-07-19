@@ -76,14 +76,14 @@ body, html {
 .hidden {
     display: none;
 }
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .message {
-        font-size: 1.5em; Smaller font size for smaller screens 
+        font-size: 1.5em; /*Smaller font size for smaller screens*/
     }
 }
 
 @media (max-width: 480px) {
     .message {
-        font-size: 1em;  Even smaller font size for very small screens 
+        font-size: 1em;  /*Even smaller font size for very small screens  */
     }
-} */
+}
