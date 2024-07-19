@@ -36,16 +36,9 @@ body, html {
     justify-content: center;
 }
 
-#welcome-message {
-    /* background-color: blue; */
-    color: black;
-}
-
-#invite-message {
-    /* background: url("pink-marble.jpg") no-repeat; */
-    /* background-size: cover; */
-    /* background-color: blue; */
-    color: black;
+#welcome-message,#invite-message {
+    font-size: 150px;
+    color: white;
 }
 
 #main-content {
