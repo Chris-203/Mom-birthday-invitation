@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-    display: auto;
+    display: flex;
     align-items: center;
     justify-content: center;
     /* font-family: Arial, sans-serif; */
@@ -38,7 +38,8 @@ body, html {
 
 #welcome-message,#invite-message {
     font-size: 80px;
-    color: white;
+    color: blanchedalmond;
+    text-shadow: 6px 0.8px 0 rgb(93, 4, 22);
 }
 
 #main-content {
@@ -49,8 +50,8 @@ body, html {
     width: 100%;
     height: 100%;
     padding: 0;
-    /* overflow-y: auto; */
-    /* background-color: white; */
+    transition: opacity 2s ease-in-out;
+    opacity: 0;
     margin: auto; /* This centers it horizontally if the parent container is a flexbox */
 }
 
@@ -106,7 +107,7 @@ body, html {
 }
 #Date {
     font-size: 50px;
-    color: white;
+    color:  rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-items: center;
@@ -153,32 +154,22 @@ body, html {
     font-family:Bold;
     line-height: 100px;
 }
+#End {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  rgb(255, 192, 76);
+    margin: 0;
+    padding: 0;
+    line-height: 150px;
+}
+
 .main {
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
-#Invitation-part {
-    text-align:justify;
-    opacity: 0;
-    /* background-color: white; */
-    width: 50%;
-    height: 50%;
-    max-height: 50%;
-    border-radius: 10px;
-    color: black;
-    margin-top: -48.9px;
-    margin-bottom: 100px;
-    white-space: pre-wrap;
-    /* display: auto; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* overflow-y: auto; */
-    scrollbar-width: thin;
-    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5);
-}
+
 /* Customize scrollbar for WebKit browsers */
 #main-content::-webkit-scrollbar {
     width: 8px;
@@ -199,14 +190,103 @@ body, html {
 .hidden {
     display: none;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 360px) {
+    #Name {
+        opacity: 0;
+    }
+} */
+@media (max-width: 430px) {
     .message {
-        font-size: 1.5em; /*Smaller font size for smaller screens*/
+        font-size: 1.8em; /*Smaller font size for smaller screens*/
+    }
+    #fif{
+        font-size: 800%;
+    }
+    #Bday {
+        font-size: 550%;
+    }
+    #Celebration {
+        font-size: 300%;
+        line-height: 100px;
+    }
+    #Honor {
+        font-size: 300%;
+        line-height: 30px;
+    }
+    #Name {
+        font-size: 500%;
+        text-shadow: 5px .8px 0 rgb(93, 4, 22);
+    }
+    #Date {
+        font-size: 175%;
+    }
+    #Street {
+        font-size: 200%;
+        line-height: 70px;
+    }
+    #Time {
+        font-size: 200%;
+        line-height: 30px;
+    }
+    #Zip {
+        font-size: 200%;
+        line-height: 1px;
     }
 }
 
 @media (max-width: 480px) {
     .message {
         font-size: 1em;  /*Even smaller font size for very small screens  */
+    }
+}
+@media (max-width: 360px) {
+    .message {
+        font-size: 1.8em; /*Smaller font size for smaller screens*/
+    }
+    #fif{
+        font-size: 700%;
+    }
+    #Bday {
+        font-size: 450%;
+    }
+    #Celebration {
+        font-size: 250%;
+        line-height: 100px;
+    }
+    #Honor {
+        font-size: 250%;
+        line-height: 30px;
+    }
+    #Name {
+        font-size: 300%; /* Smaller font size for very small screens */
+    }
+}
+@media (max-width: 390px) {
+    .message {
+        font-size: 1.5em; /*Smaller font size for smaller screens*/
+    }
+    #fif{
+        font-size: 700%;
+    }
+    #Bday {
+        font-size: 450%;
+    }
+    #Celebration {
+        font-size: 250%;
+        line-height: 100px;
+    }
+    #Honor {
+        font-size: 250%;
+        line-height: 30px;
+    }
+    #Name {
+        font-size: 450%;
+        text-shadow: 5px .8px 0 rgb(93, 4, 22);
+    }
+    #Date {
+        font-size: 175%;
+    }
+    #Time,#Street,#Zip {
+        font-size: 200%;
     }
 }
